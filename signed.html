@@ -73,25 +73,25 @@
                 </ul>
             </nav>
         </header>
-
     <main>
         <center>
-            <h2><i>Welcome to the Official Webpage of Planet of the Little Green Men!</i></h2>   
-        <section id="home">
-            <p style="color:rgb(255, 255, 255)">Arrival / Monster in Your Head Out Now!!!!</p>
-
-            <div>
-                <img src="images/ARRIVALART-1.png" alt="Arrival / Monster in Your Head Cover" width="300" length="300">
-
-            </div>
-            <h3>Reviews and References</h3>
-            <ul>
-                <li><a href="https://www.offbeat.com/news/new-releases-in-new-orleans-1-30-23/" target="_blank">Offbeat Magazine - New Releases January 2023</a></li>
-                <li><a href="https://loyolamaroon.com/10037237/life-times/the-little-green-men-make-their-arrival-to-earth/" target="_blank">Loyola Maroon - 1/26/23</a></li>
-            </ul>
-        </section>
-            <hr>
-            <img src="images/alien-gif-sites.gif">
+        <div id="notice"></div>
+        <img src="images/under_construction.gif" style="position:absolute;left:50px;right:50px" >
+        <h1><i>Warning: Under Construction</i></h1>
+        <img src="images/under_construction.gif"
+        style="position:absolute;left:700px;top:510px">
+        <h3><b>Coming soon:</b> All guest messages will stay right here, forever!</h3>
+        <div id="results"></div>
+        <div id="return">
+            <a href="guest.html">Back to the Guest Book</a>
+        </div>
+        <script>
+            const resultsList = document.getElementById('results')
+            new URLSearchParams(window.location.search).forEach((value,name)=> {
+                resultsList.append(`${name}:${value}`)
+                resultsList.append(document.createElement('br'))
+            })
+        </script>
         </center>
     </main>
     <hr>
@@ -99,10 +99,8 @@
         <center>
         <p style="color:rgb(255, 255, 255)">&copy; Planet of the Little Green Men 2023. All Rights Reserved.</p>
         </center>
-            
+                
     </footer>
-
-
-
+    
     </body>
 </html>

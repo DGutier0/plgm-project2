@@ -67,31 +67,33 @@
                     <li><a href="tour.html">Shows</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="epk.html">Press Kit</a></li>
-                    <li><a href="guest.html">Guest Book</a></li>
+                    <li><a href="guest.php">Guest Book</a></li>
                     <li><a href="ttm.html">The Time Machine</a></li>
      
                 </ul>
             </nav>
         </header>
-
     <main>
         <center>
-            <h2><i>Welcome to the Official Webpage of Planet of the Little Green Men!</i></h2>   
-        <section id="home">
-            <p style="color:rgb(255, 255, 255)">Arrival / Monster in Your Head Out Now!!!!</p>
-
-            <div>
-                <img src="images/ARRIVALART-1.png" alt="Arrival / Monster in Your Head Cover" width="300" length="300">
-
-            </div>
-            <h3>Reviews and References</h3>
-            <ul>
-                <li><a href="https://www.offbeat.com/news/new-releases-in-new-orleans-1-30-23/" target="_blank">Offbeat Magazine - New Releases January 2023</a></li>
-                <li><a href="https://loyolamaroon.com/10037237/life-times/the-little-green-men-make-their-arrival-to-earth/" target="_blank">Loyola Maroon - 1/26/23</a></li>
-            </ul>
-        </section>
-            <hr>
-            <img src="images/alien-gif-sites.gif">
+        <h1>Guest Book</h1>
+        <h3><i>Feel free to sign your name and a message about your experience with this website, the band, your day, or whatever else you'd like us to hear!</i></h3>
+        
+        <form action="guest.php" method="POST" enctype="multipart/form-data">
+        <div>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label>Date</label>
+            <input type="date" name="date" id="date" min="2023-05-10">
+        </div>
+        <div>
+            <label>Message</label>
+            <input type="text" name="message" id="message" required>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        </form>
         </center>
     </main>
     <hr>
@@ -99,10 +101,10 @@
         <center>
         <p style="color:rgb(255, 255, 255)">&copy; Planet of the Little Green Men 2023. All Rights Reserved.</p>
         </center>
-            
+                
     </footer>
-
-
-
+    
+    
+    
     </body>
 </html>

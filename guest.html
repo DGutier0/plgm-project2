@@ -53,6 +53,16 @@
         <meta name="description" content="This is an example of an artist page that I am making for class.">
         <meta name="keywords" content="rock, college band, loyola university new orleans, artist page, new orleans, psych rock, planet of the little green men, New Orleans.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            function testVariable() {
+            var strText = document.getElementById("textone").value;          
+            var strText1 = document.getElementById("textTWO").value;
+            var result = strText + ' ' + strText1;
+            document.getElementById('spanResult').textContent = result;
+             
+        }
+        </script>
     </head>
     <body>
         <header>
@@ -73,25 +83,28 @@
                 </ul>
             </nav>
         </header>
-
     <main>
         <center>
-            <h2><i>Welcome to the Official Webpage of Planet of the Little Green Men!</i></h2>   
-        <section id="home">
-            <p style="color:rgb(255, 255, 255)">Arrival / Monster in Your Head Out Now!!!!</p>
-
-            <div>
-                <img src="images/ARRIVALART-1.png" alt="Arrival / Monster in Your Head Cover" width="300" length="300">
-
-            </div>
-            <h3>Reviews and References</h3>
-            <ul>
-                <li><a href="https://www.offbeat.com/news/new-releases-in-new-orleans-1-30-23/" target="_blank">Offbeat Magazine - New Releases January 2023</a></li>
-                <li><a href="https://loyolamaroon.com/10037237/life-times/the-little-green-men-make-their-arrival-to-earth/" target="_blank">Loyola Maroon - 1/26/23</a></li>
-            </ul>
-        </section>
-            <hr>
-            <img src="images/alien-gif-sites.gif">
+        <h1>Guest Book</h1>
+        <img src="images/guest_book.gif">
+        <h3><i>Feel free to sign your name and a message about your experience with this website, the band, your day, or whatever else you'd like us to hear!</i></h3>
+        
+        <form action="signed.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label>Name</label>
+            <input type="text" name="Name" id="Name" required>
+        </div>
+        <div>
+            <label>Date</label>
+            <input type="date" name="Date" id="Date" min="2023-05-10">
+        </div>
+        <div>
+            <label>Message</label>
+            <input type="text" name="Message" id="Message" required>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        </form>
         </center>
     </main>
     <hr>
@@ -99,10 +112,10 @@
         <center>
         <p style="color:rgb(255, 255, 255)">&copy; Planet of the Little Green Men 2023. All Rights Reserved.</p>
         </center>
-            
+                
     </footer>
-
-
-
+    
+    
+    
     </body>
 </html>
